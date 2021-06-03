@@ -1,0 +1,83 @@
+{
+  "id": "3782d428-d5a1-4a45-b8c4-e4bea44a676e",
+  "version": "2.0",
+  "name": "Selenium iDE LendingFront",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "de3ad886-aafa-4bc3-b09f-73901e88a8f3",
+    "name": "Search LendingFront",
+    "commands": [{
+      "id": "f2836d82-2fdc-43dc-a5ba-57dd4d3eafb1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd1e1649-0df2-4194-b067-b2eae92e5275",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcb18083-210d-4448-9ef8-21eb3f7c2e74",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e24a9b1f-8bd4-4e94-a8e8-f6fe473cd354",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "lendingfront"
+    }, {
+      "id": "94db81c4-87f6-4b9f-9dd8-bcb9d742313e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e8bc397c-e8eb-4b2d-9ce9-bf9d1b7c35d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g:nth-child(1) > div:nth-child(2) .LC20lb",
+      "targets": [
+        ["css=.g:nth-child(1) > div:nth-child(2) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'LendingFront | Technology for Business and Consumer Lending')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c9d4198e-9405-41d9-8a6a-883a315cd298",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["de3ad886-aafa-4bc3-b09f-73901e88a8f3"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
